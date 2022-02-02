@@ -16,4 +16,15 @@ a {
 
 .wrapper {
 	max-inline-size: 64rem;
+	margin: auto;
+}
+
+.box {
+	border: 5px dashed var(--primaryColor);
+	padding: 1rem;
+	counter-increment: flex-items;
+}
+
+.box::after {
+	content: counter(flex-items);
 }
